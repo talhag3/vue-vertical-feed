@@ -19,7 +19,7 @@ const generateRandomColor = () => {
 
 const fetchPosts = async () => {
   try {
-    const response = await fetch("https://saurav.tech/NewsAPI/top-headlines/category/health/in.json");
+    const response = await fetch("https://saurav.tech/NewsAPI/top-headlines/category/sports/gb.json");
     const data = await response.json();
     posts.value = data.articles;
     randomColors.value = data.articles.map(() => generateRandomColor());
